@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA VI - Image Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="glitch-overlay"></div>
+    
+    <!-- Menu Toggle Button -->
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    
+    <!-- Side Navigation -->
+    <nav class="nav-bar" id="navBar">
+        <div class="container">
+            <div class="logo">
+                <img src="GTA 6 Official Logo .png" alt="GTA VI">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="trailers.html">TRAILERS</a></li>
+                <li><a href="characters.html">CHARACTERS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="puzzle.html" class="active">PUZZLE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-slideshow">
+            <div class="hero-slide active" style="background-image: url('Vice_City_01.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('Jason_Duval_03.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('Lucia_Caminos_05.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('Port_Gellhorn_02.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('Vice_City_04.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('Real_Dimez_03.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('lucia-caminos-night-3840x2160-22316.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('Jason_Duval_04.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('Port_Gellhorn_03.jpg')"></div>
+        </div>
+        <h1 class="glitch" data-text="PUZZLE CHALLENGE">PUZZLE CHALLENGE</h1>
+        <p>Solve the broken image puzzle</p>
+    </section>
+
+    <section class="puzzle-section">
+        <div class="container">
+            <div class="puzzle-controls">
+                <div class="puzzle-info">
+                    <div class="timer">
+                        <span class="timer-label">TIME:</span>
+                        <span id="timer">00:00</span>
+                    </div>
+                    <div class="moves">
+                        <span class="moves-label">MOVES:</span>
+                        <span id="moves">0</span>
+                    </div>
+                </div>
+                <div class="puzzle-buttons">
+                    <button id="newPuzzle" class="btn btn-primary">NEW PUZZLE</button>
+                    <button id="showHint" class="btn btn-secondary">SHOW HINT</button>
+                </div>
+            </div>
+
+            <div class="puzzle-container">
+                <div class="puzzle-board" id="puzzleBoard"></div>
+                <div class="puzzle-preview">
+                    <h3>REFERENCE IMAGE</h3>
+                    <img id="previewImage" src="" alt="Preview">
+                </div>
+            </div>
+
+            <div class="puzzle-complete-modal" id="completeModal">
+                <div class="modal-content">
+                    <h2>🎉 PUZZLE COMPLETE!</h2>
+                    <p>Time: <span id="finalTime"></span></p>
+                    <p>Moves: <span id="finalMoves"></span></p>
+                    <button id="playAgain" class="btn btn-primary">PLAY AGAIN</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Rockstar Games. GTA VI Fan Site.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="puzzle.js"></script>
+</body>
+</html>
